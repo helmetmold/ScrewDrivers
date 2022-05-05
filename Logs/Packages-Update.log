@@ -53,3 +53,16 @@ The following packages were updated:
   com.unity.ide.rider from version 2.0.7 to 3.0.12
   com.unity.render-pipelines.universal from version 10.8.1 to 12.1.4
   com.unity.timeline from version 1.4.8 to 1.6.3
+
+=== Fri May  6 00:13:23 2022
+
+Packages were changed.
+Update Mode: mergeDefaultDependencies
+
+The following packages were added:
+  com.unity.2d.sprite@1.0.0
+  com.unity.2d.tilemap@1.0.0
+  com.unity.recorder@2.1.0-preview.1
+  com.unity.xr.interaction.toolkit@1.0.0-pre.4
+  com.unity.xr.legacyinputhelpers@2.1.8
+  com.unity.xr.openvr.standalone@2.0.5
