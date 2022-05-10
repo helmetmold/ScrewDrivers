@@ -1996,7 +1996,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 114555961670963776}
-        m_TargetAssemblyTypeName: 
+        m_TargetAssemblyTypeName: CloudFine.ThrowLab.UI.UIThrowGrip, Assembly-CSharp
         m_MethodName: SetGripBegin
         m_Mode: 0
         m_Arguments:
@@ -2008,7 +2008,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 114492783551692292}
-        m_TargetAssemblyTypeName: 
+        m_TargetAssemblyTypeName: CloudFine.ThrowLab.UI.UIValueText, Assembly-CSharp
         m_MethodName: SetValue
         m_Mode: 0
         m_Arguments:
@@ -3008,7 +3008,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 224812958431027332}
   m_Direction: 2
   m_Value: 0
-  m_Size: 0.99999994
+  m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -3100,7 +3100,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 114197747675398744}
-        m_TargetAssemblyTypeName: 
+        m_TargetAssemblyTypeName: CloudFine.ThrowLab.UI.UIThrowConfiguration, Assembly-CSharp
         m_MethodName: SetAssistCustomCurve
         m_Mode: 0
         m_Arguments:
@@ -5866,7 +5866,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 114197747675398744}
-        m_TargetAssemblyTypeName: 
+        m_TargetAssemblyTypeName: CloudFine.ThrowLab.UI.UIThrowConfiguration, Assembly-CSharp
         m_MethodName: SetFrictionCustomCurve
         m_Mode: 0
         m_Arguments:
@@ -7031,7 +7031,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 114197747675398744}
-        m_TargetAssemblyTypeName: 
+        m_TargetAssemblyTypeName: CloudFine.ThrowLab.UI.UIThrowConfiguration, Assembly-CSharp
         m_MethodName: SetFrictionEnabled
         m_Mode: 0
         m_Arguments:
@@ -8885,7 +8885,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 114197747675398744}
-        m_TargetAssemblyTypeName: 
+        m_TargetAssemblyTypeName: CloudFine.ThrowLab.UI.UIThrowConfiguration, Assembly-CSharp
         m_MethodName: SetAssistEnabled
         m_Mode: 0
         m_Arguments:
@@ -9361,7 +9361,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 224704245466430200}
   m_Direction: 0
   m_Value: 1
-  m_Size: 0.9999999
+  m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -10148,7 +10148,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 114197747675398744}
-        m_TargetAssemblyTypeName: 
+        m_TargetAssemblyTypeName: CloudFine.ThrowLab.UI.UIThrowConfiguration, Assembly-CSharp
         m_MethodName: SetAssistRange
         m_Mode: 0
         m_Arguments:
@@ -10160,7 +10160,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 114230346212162776}
-        m_TargetAssemblyTypeName: 
+        m_TargetAssemblyTypeName: CloudFine.ThrowLab.UI.UIValueText, Assembly-CSharp
         m_MethodName: SetValue
         m_Mode: 0
         m_Arguments:
@@ -10172,7 +10172,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 114235846014145822}
-        m_TargetAssemblyTypeName: 
+        m_TargetAssemblyTypeName: CloudFine.ThrowLab.UI.UIAngleValue, Assembly-CSharp
         m_MethodName: SetRange
         m_Mode: 0
         m_Arguments:
@@ -10427,7 +10427,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 114197747675398744}
-        m_TargetAssemblyTypeName: 
+        m_TargetAssemblyTypeName: CloudFine.ThrowLab.UI.UIThrowConfiguration, Assembly-CSharp
         m_MethodName: SetScalingRamp
         m_Mode: 0
         m_Arguments:
@@ -10439,7 +10439,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 114934491643017162}
-        m_TargetAssemblyTypeName: 
+        m_TargetAssemblyTypeName: CloudFine.ThrowLab.UI.UICurveLine, Assembly-CSharp
         m_MethodName: RefreshCurve
         m_Mode: 1
         m_Arguments:
@@ -10451,7 +10451,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 114543565092312100}
-        m_TargetAssemblyTypeName: 
+        m_TargetAssemblyTypeName: CloudFine.ThrowLab.UI.UIValueText, Assembly-CSharp
         m_MethodName: SetValue
         m_Mode: 0
         m_Arguments:
@@ -11228,7 +11228,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 114197747675398744}
-        m_TargetAssemblyTypeName: 
+        m_TargetAssemblyTypeName: CloudFine.ThrowLab.UI.UIThrowConfiguration, Assembly-CSharp
         m_MethodName: SetAssistWeight
         m_Mode: 0
         m_Arguments:
@@ -11240,7 +11240,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 114468124095554246}
-        m_TargetAssemblyTypeName: 
+        m_TargetAssemblyTypeName: CloudFine.ThrowLab.UI.UIValueText, Assembly-CSharp
         m_MethodName: SetValue
         m_Mode: 0
         m_Arguments:
@@ -12027,7 +12027,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 114105849100587582}
-        m_TargetAssemblyTypeName: 
+        m_TargetAssemblyTypeName: CloudFine.ThrowLab.LabManager, Assembly-CSharp
         m_MethodName: SetCurrentSampleVisEnabled
         m_Mode: 0
         m_Arguments:
@@ -13037,7 +13037,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 114555961670963776}
-        m_TargetAssemblyTypeName: 
+        m_TargetAssemblyTypeName: CloudFine.ThrowLab.UI.UIThrowGrip, Assembly-CSharp
         m_MethodName: SetGripEnd
         m_Mode: 0
         m_Arguments:
@@ -13049,7 +13049,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 114571605456258920}
-        m_TargetAssemblyTypeName: 
+        m_TargetAssemblyTypeName: CloudFine.ThrowLab.UI.UIValueText, Assembly-CSharp
         m_MethodName: SetValue
         m_Mode: 0
         m_Arguments:
@@ -15806,7 +15806,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 114197747675398744}
-        m_TargetAssemblyTypeName: 
+        m_TargetAssemblyTypeName: CloudFine.ThrowLab.UI.UIThrowConfiguration, Assembly-CSharp
         m_MethodName: SetAssistGravity
         m_Mode: 0
         m_Arguments:
@@ -15818,7 +15818,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 114086079471982418}
-        m_TargetAssemblyTypeName: 
+        m_TargetAssemblyTypeName: CloudFine.ThrowLab.UI.UICurveLine, Assembly-CSharp
         m_MethodName: RefreshCurve
         m_Mode: 1
         m_Arguments:
@@ -15830,7 +15830,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 114364364438590040}
-        m_TargetAssemblyTypeName: 
+        m_TargetAssemblyTypeName: CloudFine.ThrowLab.UI.UIValueText, Assembly-CSharp
         m_MethodName: SetValue
         m_Mode: 0
         m_Arguments:
@@ -22699,7 +22699,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 114197747675398744}
-        m_TargetAssemblyTypeName: 
+        m_TargetAssemblyTypeName: CloudFine.ThrowLab.UI.UIThrowConfiguration, Assembly-CSharp
         m_MethodName: SetScalingCustomCurve
         m_Mode: 0
         m_Arguments:
@@ -23553,7 +23553,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 114197747675398744}
-        m_TargetAssemblyTypeName: 
+        m_TargetAssemblyTypeName: CloudFine.ThrowLab.UI.UIThrowConfiguration, Assembly-CSharp
         m_MethodName: SetSmoothingEnabled
         m_Mode: 0
         m_Arguments:
@@ -24027,7 +24027,7 @@ MeshRenderer:
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 7c46dec3bbe1d7244bdd00a6a5ad208b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -25039,7 +25039,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 114197747675398744}
-        m_TargetAssemblyTypeName: 
+        m_TargetAssemblyTypeName: CloudFine.ThrowLab.UI.UIThrowConfiguration, Assembly-CSharp
         m_MethodName: SetScalingEnabled
         m_Mode: 0
         m_Arguments:
@@ -26355,7 +26355,7 @@ MeshRenderer:
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -27927,7 +27927,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 114105849100587582}
-        m_TargetAssemblyTypeName: 
+        m_TargetAssemblyTypeName: CloudFine.ThrowLab.LabManager, Assembly-CSharp
         m_MethodName: SetCurrentConfigEnabled
         m_Mode: 0
         m_Arguments:
@@ -29011,7 +29011,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 114105849100587582}
-        m_TargetAssemblyTypeName: 
+        m_TargetAssemblyTypeName: CloudFine.ThrowLab.LabManager, Assembly-CSharp
         m_MethodName: SetCurrentLineEnabled
         m_Mode: 0
         m_Arguments:
@@ -29457,7 +29457,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 114197747675398744}
-        m_TargetAssemblyTypeName: 
+        m_TargetAssemblyTypeName: CloudFine.ThrowLab.UI.UIThrowConfiguration, Assembly-CSharp
         m_MethodName: SetFrictionFalloff
         m_Mode: 0
         m_Arguments:
@@ -29469,7 +29469,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 114241514445220932}
-        m_TargetAssemblyTypeName: 
+        m_TargetAssemblyTypeName: CloudFine.ThrowLab.UI.UICurveLine, Assembly-CSharp
         m_MethodName: RefreshCurve
         m_Mode: 1
         m_Arguments:
@@ -29481,7 +29481,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 114945289853273974}
-        m_TargetAssemblyTypeName: 
+        m_TargetAssemblyTypeName: CloudFine.ThrowLab.UI.UIValueText, Assembly-CSharp
         m_MethodName: SetValue
         m_Mode: 0
         m_Arguments:

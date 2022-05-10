@@ -94,7 +94,7 @@ namespace CloudFine.ThrowLab
             CollisionListener listener = _rigidbody.gameObject.AddComponent<CollisionListener>();
             listener.CollisionEnter += OnCollisionEnter;
             throwable.OnDestroyHandle += OnHandleDestroyed;
-            CreateOutline(throwable.gameObject);
+            //CreateOutline(throwable.gameObject);
         }
 
         public void SetLineAppearance(Texture lineTex, Color lineColor)

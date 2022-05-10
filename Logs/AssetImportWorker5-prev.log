@@ -15,7 +15,7 @@ C:/Users/n10427732/Documents/GitHub/ScrewDrivers
 -logFile
 Logs/AssetImportWorker5.log
 -srvPort
-57809
+55849
 Successfully changed project path to: C:/Users/n10427732/Documents/GitHub/ScrewDrivers
 C:/Users/n10427732/Documents/GitHub/ScrewDrivers
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -47,8 +47,8 @@ C:/Users/n10427732/Documents/GitHub/ScrewDrivers
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Refreshing native plugins compatible for Editor in 87.70 ms, found 12 plugins.
-Preloading 1 native plugins for Editor in 0.72 ms.
+Refreshing native plugins compatible for Editor in 103.91 ms, found 13 plugins.
+Preloading 1 native plugins for Editor in 0.93 ms.
 Initialize engine version: 2021.2.12f1 (48b1aa000234)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.2.12f1/Editor/Data/Resources/UnitySubsystems
 [Subsystems] Discovering subsystems at path C:/Users/n10427732/Documents/GitHub/ScrewDrivers/Assets
@@ -64,52 +64,52 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.2.12f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.2.12f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.2.12f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56756
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56656
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.2.12f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.2.12f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.004991 seconds.
+Registered in 0.005604 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 79.83 ms, found 12 plugins.
-Preloading 1 native plugins for Editor in 0.07 ms.
+Refreshing native plugins compatible for Editor in 84.28 ms, found 13 plugins.
+Preloading 1 native plugins for Editor in 0.09 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.496 seconds
+- Completed reload, in  0.539 seconds
 Domain Reload Profiling:
-	ReloadAssembly (497ms)
-		BeginReloadAssembly (51ms)
+	ReloadAssembly (540ms)
+		BeginReloadAssembly (57ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (363ms)
-			LoadAssemblies (50ms)
+		EndReloadAssembly (390ms)
+			LoadAssemblies (56ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (84ms)
+			SetupTypeCache (85ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (21ms)
-			SetupLoadedEditorAssemblies (218ms)
+			RebuildScriptCaches (25ms)
+			SetupLoadedEditorAssemblies (232ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (7ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (80ms)
+				RefreshPlugins (85ms)
 				BeforeProcessingInitializeOnLoad (1ms)
-				ProcessInitializeOnLoadAttributes (95ms)
-				ProcessInitializeOnLoadMethodAttributes (35ms)
+				ProcessInitializeOnLoadAttributes (102ms)
+				ProcessInitializeOnLoadMethodAttributes (36ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.006733 seconds.
+Registered in 0.007762 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 87.12 ms, found 12 plugins.
-Preloading 1 native plugins for Editor in 0.08 ms.
+Refreshing native plugins compatible for Editor in 78.87 ms, found 13 plugins.
+Preloading 1 native plugins for Editor in 0.10 ms.
 [XR] OculusXRPlugin: registering subsystems
 [XR] Unable to register display lifecyle provider: [1]
 [XR] Oculus Input lifecycle provider registered.
@@ -117,44 +117,44 @@ Preloading 1 native plugins for Editor in 0.08 ms.
 [XR] OVRP version 1.70.0
 Mono: successfully reloaded assembly
 Package Manager log level set to [2]
-- Completed reload, in  1.504 seconds
+- Completed reload, in  1.281 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1505ms)
-		BeginReloadAssembly (81ms)
+	ReloadAssembly (1282ms)
+		BeginReloadAssembly (84ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (5ms)
+			DisableScriptedObjects (4ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (16ms)
-		EndReloadAssembly (1335ms)
-			LoadAssemblies (60ms)
+			CreateAndSetChildDomain (18ms)
+		EndReloadAssembly (1109ms)
+			LoadAssemblies (65ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (219ms)
+			SetupTypeCache (208ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (74ms)
-			SetupLoadedEditorAssemblies (938ms)
+			RebuildScriptCaches (72ms)
+			SetupLoadedEditorAssemblies (723ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (4ms)
+				InitializePlatformSupportModulesInManaged (5ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (87ms)
-				BeforeProcessingInitializeOnLoad (86ms)
-				ProcessInitializeOnLoadAttributes (680ms)
-				ProcessInitializeOnLoadMethodAttributes (77ms)
-				AfterProcessingInitializeOnLoad (4ms)
+				RefreshPlugins (79ms)
+				BeforeProcessingInitializeOnLoad (90ms)
+				ProcessInitializeOnLoadAttributes (469ms)
+				ProcessInitializeOnLoadMethodAttributes (76ms)
+				AfterProcessingInitializeOnLoad (5ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (5ms)
+			AwakeInstancesAfterBackupRestoration (4ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
-Refreshing native plugins compatible for Editor in 1.22 ms, found 12 plugins.
+Refreshing native plugins compatible for Editor in 1.54 ms, found 13 plugins.
 Preloading 1 native plugins for Editor in 0.11 ms.
-Unloading 5544 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 96 unused Assets / (0.9 MB). Loaded Objects now: 5967.
-Memory consumption went from 319.0 MB to 318.2 MB.
-Total: 4.381700 ms (FindLiveObjects: 0.413200 ms CreateObjectMapping: 0.221100 ms MarkObjects: 3.414400 ms  DeleteObjects: 0.331800 ms)
+Unloading 5548 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 95 unused Assets / (0.9 MB). Loaded Objects now: 5973.
+Memory consumption went from 319.9 MB to 319.0 MB.
+Total: 3.454100 ms (FindLiveObjects: 0.348200 ms CreateObjectMapping: 0.191400 ms MarkObjects: 2.582000 ms  DeleteObjects: 0.331600 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -168,46 +168,162 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 35957.441838 seconds.
+  Time since last request: 33737.454852 seconds.
+  path: Assets/Oculus/SampleFramework/Core/HandsInteraction/Materials/DefaultHandMaterial.mat
+  artifactKey: Guid(8f92ce6a2e9e04e458f46e6a635b1d62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/SampleFramework/Core/HandsInteraction/Materials/DefaultHandMaterial.mat using Guid(8f92ce6a2e9e04e458f46e6a635b1d62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '16e51783b6817d69ab27432ecd75881c') in 0.220190 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Oculus/Interaction/Runtime/Prefabs/HandGrab/Ghost-RightHand.prefab
+  artifactKey: Guid(4170d4d20a9b6034a88d89a71c2e0828) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/Interaction/Runtime/Prefabs/HandGrab/Ghost-RightHand.prefab using Guid(4170d4d20a9b6034a88d89a71c2e0828) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7f21bf3e0e8fefcfc43c4dafc025134d') in 0.043885 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Oculus/SampleFramework/Usage/Passthrough/Materials/FatHand.mat
+  artifactKey: Guid(ab04d9fb6b1844341887a1606c641c42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/SampleFramework/Usage/Passthrough/Materials/FatHand.mat using Guid(ab04d9fb6b1844341887a1606c641c42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0321b4b6cd42a84296e115025e7ad2a5') in 0.014310 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Oculus/Interaction/Samples/Materials/FramePoseTwoHandedParticle.mat
+  artifactKey: Guid(4f0bfa166f8d21e4f8b433ae64c0c0c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/Interaction/Samples/Materials/FramePoseTwoHandedParticle.mat using Guid(4f0bfa166f8d21e4f8b433ae64c0c0c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '58f31e935be21fdc4980dc20e38d6448') in 0.054381 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.610323 seconds.
+  path: Assets/Oculus/Interaction/Runtime/Meshes/HandLeft.asset
+  artifactKey: Guid(d62eb29994855484da750dff41b8b018) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/Interaction/Runtime/Meshes/HandLeft.asset using Guid(d62eb29994855484da750dff41b8b018) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c0a1059ed89e66276eeff7c384fe0c7a') in 0.031376 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.801166 seconds.
+  path: Assets/Oculus/SampleFramework/Usage/Passthrough/Materials/HandMeshMaskGradient.tga
+  artifactKey: Guid(5ac6000c94a7c4211b8055eb6829a647) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/SampleFramework/Usage/Passthrough/Materials/HandMeshMaskGradient.tga using Guid(5ac6000c94a7c4211b8055eb6829a647) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0656c97faa45d87d17e79f43849e07e6') in 0.023242 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.059410 seconds.
+  path: Assets/Oculus/Interaction/Runtime/Meshes/HandRight.asset
+  artifactKey: Guid(9e4109dbfa83c074d8cc6752d94eed89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/Interaction/Runtime/Meshes/HandRight.asset using Guid(9e4109dbfa83c074d8cc6752d94eed89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f45ae173fc920d01c1b9487f9cb93948') in 0.013096 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.636047 seconds.
+  path: Assets/Oculus/SampleFramework/Core/HandsInteraction/Prefabs/HandsManager.prefab
+  artifactKey: Guid(cbdf09e3b0f1ac246914a74904002cb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/SampleFramework/Core/HandsInteraction/Prefabs/HandsManager.prefab using Guid(cbdf09e3b0f1ac246914a74904002cb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a38555a5bee4f8f2400ceebc3cfab0e') in 0.010382 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.269661 seconds.
   path: Assets/Oculus/SampleFramework/Usage/HandsTrainExample/Materials/HandsNotificationMaterial.mat
   artifactKey: Guid(497f7cc045d01f1479c242f0b883e8f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Oculus/SampleFramework/Usage/HandsTrainExample/Materials/HandsNotificationMaterial.mat using Guid(497f7cc045d01f1479c242f0b883e8f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd5770fb1c83a3b69038ef395ea8d8c3d') in 0.202620 seconds 
+Start importing Assets/Oculus/SampleFramework/Usage/HandsTrainExample/Materials/HandsNotificationMaterial.mat using Guid(497f7cc045d01f1479c242f0b883e8f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd5770fb1c83a3b69038ef395ea8d8c3d') in 0.015225 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.860045 seconds.
-  path: Assets/Oculus/SampleFramework/Core/CustomHands/Animations/l_hand_fist_anim.fbx
-  artifactKey: Guid(7cb2e1480bb51ce4282f540ea3f41d4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Oculus/SampleFramework/Core/CustomHands/Animations/l_hand_fist_anim.fbx using Guid(7cb2e1480bb51ce4282f540ea3f41d4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '44e4618ddfb102232c2a30a1971f378b') in 0.019356 seconds 
+  Time since last request: 0.000028 seconds.
+  path: Assets/Oculus/Interaction/Samples/Materials/HandStopParticle.mat
+  artifactKey: Guid(e42185d31895c2d4cbbcd05d29a4c115) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/Interaction/Samples/Materials/HandStopParticle.mat using Guid(e42185d31895c2d4cbbcd05d29a4c115) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '19dfd7be8dfb5b43188d9e355d3a5502') in 0.013504 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.010319 seconds.
-  path: Assets/Oculus/SampleFramework/Core/CustomHands/Animations/l_hand_pinch_anim.fbx
-  artifactKey: Guid(a91ff20f7450bf446a6bf0bfb5e932ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Oculus/SampleFramework/Core/CustomHands/Animations/l_hand_pinch_anim.fbx using Guid(a91ff20f7450bf446a6bf0bfb5e932ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c173adbd13987d6823fe2e30a7e36b1b') in 0.013107 seconds 
+  Time since last request: 4.624411 seconds.
+  path: Assets/Oculus/SampleFramework/Core/CustomHands/Animations/l_hand_default_anim.fbx
+  artifactKey: Guid(1ae9aefe37a62de429ddc2edd1ca36f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/SampleFramework/Core/CustomHands/Animations/l_hand_default_anim.fbx using Guid(1ae9aefe37a62de429ddc2edd1ca36f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '706099f6dc917165135fd8a7f3db22ed') in 0.015550 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 3.991124 seconds.
+  Time since last request: 0.891529 seconds.
+  path: Assets/Oculus/SampleFramework/Core/CustomHands/Animations/l_hand_hold_l_controller_anim.fbx
+  artifactKey: Guid(f29e0ae9b6aa173489854687db6a05bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/SampleFramework/Core/CustomHands/Animations/l_hand_hold_l_controller_anim.fbx using Guid(f29e0ae9b6aa173489854687db6a05bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '620b471f3d7bc2c77a98cf9a426ebe41') in 0.012532 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.073921 seconds.
+  path: Assets/Oculus/SampleFramework/Core/CustomHands/Animations/l_hand_relax_3qtr_fist_anim.fbx
+  artifactKey: Guid(79e0d96a3e30fec46a930ab7dd95ef5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/SampleFramework/Core/CustomHands/Animations/l_hand_relax_3qtr_fist_anim.fbx using Guid(79e0d96a3e30fec46a930ab7dd95ef5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd9c872694a58a4206ed93e8980596d7d') in 0.010320 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.288673 seconds.
+  path: Assets/Oculus/VR/Meshes/HandTracking/OculusHand_L.fbx
+  artifactKey: Guid(442d5b4503ed83c4897ef44659446587) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/VR/Meshes/HandTracking/OculusHand_L.fbx using Guid(442d5b4503ed83c4897ef44659446587) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5637306906873e3b0493367cc22a336b') in 0.037791 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.559876 seconds.
+  path: Assets/XR/Settings/Open XR Package Settings.asset
+  artifactKey: Guid(53470a1915af5b644a380a089f5bdfdc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/XR/Settings/Open XR Package Settings.asset using Guid(53470a1915af5b644a380a089f5bdfdc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a694c5b7a480779ad22614225e9ac46') in 0.021458 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.032533 seconds.
   path: Assets/Oculus/Interaction/Runtime/Meshes/OculusHandPinchArrowBlended.fbx
   artifactKey: Guid(dca3d72ce32048e409eaaf754210cfe8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Oculus/Interaction/Runtime/Meshes/OculusHandPinchArrowBlended.fbx using Guid(dca3d72ce32048e409eaaf754210cfe8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e5155c25d40e500b760b12eb3d8a140d') in 0.048640 seconds 
+Start importing Assets/Oculus/Interaction/Runtime/Meshes/OculusHandPinchArrowBlended.fbx using Guid(dca3d72ce32048e409eaaf754210cfe8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e5155c25d40e500b760b12eb3d8a140d') in 0.025070 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 2.411176 seconds.
-  path: Assets/Oculus/SampleFramework/Core/CustomHands/Animations/r_hand_fist_anim.fbx
-  artifactKey: Guid(005ab0ae8aa7f74438a5fa50f7cd50e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Oculus/SampleFramework/Core/CustomHands/Animations/r_hand_fist_anim.fbx using Guid(005ab0ae8aa7f74438a5fa50f7cd50e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '90c45a380ca4cefb9c38a84f8e6a7f23') in 0.012799 seconds 
+  Time since last request: 0.000030 seconds.
+  path: Assets/Oculus/Interaction/Runtime/Materials/OculusHandPinchMaterial.mat
+  artifactKey: Guid(861c253c01be7f7489f64e9ac001a10c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/Interaction/Runtime/Materials/OculusHandPinchMaterial.mat using Guid(861c253c01be7f7489f64e9ac001a10c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fdde9605b0cca894638b238b934349c8') in 0.012318 seconds 
 ========================================================================
-Received Import Request.
-  Time since last request: 0.050481 seconds.
-  path: Assets/Oculus/SampleFramework/Core/CustomHands/Animations/r_hand_hold_r_controller_anim.fbx
-  artifactKey: Guid(323906a7e4d1c1049b00339691b2db98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Oculus/SampleFramework/Core/CustomHands/Animations/r_hand_hold_r_controller_anim.fbx using Guid(323906a7e4d1c1049b00339691b2db98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a4492763742269c79b6eb1f0e7a9c23') in 0.013284 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.022876 seconds.
-  path: Assets/Oculus/SampleFramework/Core/CustomHands/Animations/r_hand_relax_mid_fist_anim.fbx
-  artifactKey: Guid(3c1e2504e79f7a242a8a0c8a4add2578) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Oculus/SampleFramework/Core/CustomHands/Animations/r_hand_relax_mid_fist_anim.fbx using Guid(3c1e2504e79f7a242a8a0c8a4add2578) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0017a9894f3249f0980654dab9faeb38') in 0.013968 seconds 
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.007170 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.15 ms, found 13 plugins.
+Preloading 1 native plugins for Editor in 0.10 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.201 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1202ms)
+		BeginReloadAssembly (119ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (9ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (41ms)
+		EndReloadAssembly (997ms)
+			LoadAssemblies (67ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (232ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (54ms)
+			SetupLoadedEditorAssemblies (548ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (11ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (68ms)
+				ProcessInitializeOnLoadAttributes (398ms)
+				ProcessInitializeOnLoadMethodAttributes (62ms)
+				AfterProcessingInitializeOnLoad (6ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (21ms)
+Platform modules already initialized, skipping
+Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
+Refreshing native plugins compatible for Editor in 6.56 ms, found 13 plugins.
+Preloading 1 native plugins for Editor in 0.09 ms.
+Unloading 5312 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 69 unused Assets / (0.8 MB). Loaded Objects now: 6085.
+Memory consumption went from 336.1 MB to 335.3 MB.
+Total: 3.694100 ms (FindLiveObjects: 0.435800 ms CreateObjectMapping: 0.237900 ms MarkObjects: 2.724000 ms  DeleteObjects: 0.294900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
 AssetImportWorker is now disconnected from the server
 Process exiting

@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class ObjectPickup : MonoBehaviour
 {
+    /*
     public float throwForce = 600;
     Vector3 objectPos;
     float distance;
@@ -57,4 +58,5 @@ public class ObjectPickup : MonoBehaviour
     {
         isHolding = false;
     }
+    */
 }
