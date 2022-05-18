@@ -15,8 +15,8 @@ TagManager:
   - IgnoreWeapon
   - Water
   - UI
-  - 
-  - 
+  - DontCollide1
+  - Normal
   - 
   - 
   - 
