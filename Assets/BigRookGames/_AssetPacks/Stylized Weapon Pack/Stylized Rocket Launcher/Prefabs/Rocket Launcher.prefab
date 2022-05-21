@@ -157,6 +157,7 @@ GameObject:
   - component: {fileID: 195002086415459714}
   - component: {fileID: 2688717235866833224}
   - component: {fileID: 3643882369342148042}
+  - component: {fileID: 9005479896781161318}
   - component: {fileID: 4490302565791019162}
   - component: {fileID: 2205214468985690845}
   m_Layer: 0
@@ -246,6 +247,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 933e18ea02e20a1429dc3cdc3671dbc7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  AddPos: {x: 0, y: 0, z: 0}
+  loaded: 0
   GunShotClip: {fileID: 8300000, guid: 40e71b0f7bd610849b40f150553f4702, type: 3}
   ReloadClip: {fileID: 8300000, guid: c3430338b7987524d96ce1f63db280cd, type: 3}
   source: {fileID: 4490302565791019162}
@@ -262,6 +265,24 @@ MonoBehaviour:
   projectilePrefab: {fileID: 4092872357349286730, guid: 5269dd52fdc50ea429c6b6a65cc1161e, type: 3}
   projectileToDisableOnFire: {fileID: 1802767607664207933}
   timeLastFired: 0
+--- !u!114 &9005479896781161318
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4490302565791019165}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMode: 0
+  outlineColor: {r: 0.0048110485, g: 1, b: 0, a: 1}
+  outlineWidth: 2
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []
 --- !u!82 &4490302565791019162
 AudioSource:
   m_ObjectHideFlags: 0

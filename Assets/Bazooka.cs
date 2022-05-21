@@ -7,7 +7,9 @@ namespace CloudFine.ThrowLab.Oculus
     public class Bazooka : MonoBehaviour
     {
 
-        private KaisGrabbable bazooka;
+        public float firedelay;
+
+        public KaisGrabbable bazooka;
 
         public GunfireController RocketLauncher;
 
@@ -48,8 +50,7 @@ namespace CloudFine.ThrowLab.Oculus
         IEnumerator FireMissile()
         {
             MissileLoaded = false;
-            yield return new WaitForSeconds(1);
-            MissileLoaded = true;
+            yield return new WaitForSeconds(firedelay);
         }
 
     }

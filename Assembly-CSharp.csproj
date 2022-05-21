@@ -67,6 +67,7 @@
     <Compile Include="Assets\ThrowLab\Core\Scripts\ThrowConfiguration.cs" />
     <Compile Include="Assets\Oculus\Avatar\Scripts\OvrAvatarSettings.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Usage\Passthrough\Scripts\PassthroughProjectionSurface.cs" />
+    <Compile Include="Assets\Missile.cs" />
     <Compile Include="Assets\Mobile\Scripts\VirtualInputs\UIVirtualButton.cs" />
     <Compile Include="Assets\Oculus\Avatar\Scripts\GazeTarget.cs" />
     <Compile Include="Assets\InputSystem\StarterAssetsInputs.cs" />
@@ -90,6 +91,7 @@
     <Compile Include="Assets\Oculus\SampleFramework\Core\Locomotion\Scripts\TeleportDestination.cs" />
     <Compile Include="Assets\ThrowLab\Core\Scripts\UI\UICurveLine.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Usage\HandsTrainExample\Scripts\TrainButtonVisualController.cs" />
+    <Compile Include="Assets\ThrowLab\Oculus\KaiMotherGrabbable.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Usage\Passthrough\Scripts\GrabObject.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Core\Locomotion\Scripts\SimpleCapsuleWithStickMovement.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Usage\Passthrough\Scripts\AugmentedObject.cs" />
@@ -105,6 +107,7 @@
     <Compile Include="Assets\ThrowLab\Core\Scripts\UI\UISmoothingVisual.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Core\DistanceGrab\Scripts\GrabManager.cs" />
     <Compile Include="Assets\ThrowLab\Core\Scripts\UI\UIThrowGrip.cs" />
+    <Compile Include="Assets\Bazooka.cs" />
     <Compile Include="Assets\Scripts\FirstPersonController.cs" />
     <Compile Include="Assets\ThrowLab\Core\Scripts\UI\UIColorMeTag.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Usage\SpatialAnchor\Scripts\AnchorSession.cs" />
@@ -132,6 +135,7 @@
     <Compile Include="Assets\Oculus\SampleFramework\Core\Locomotion\Scripts\TeleportOrientationHandler.cs" />
     <Compile Include="Assets\Oculus\Avatar\Samples\RemoteLoopback\Scripts\RemoteLoopbackManager.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Usage\Locomotion\Scripts\LocomotionSampleSupport.cs" />
+    <Compile Include="Assets\ThrowLab\Oculus\KaisGrabbable.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Usage\Passthrough\Scripts\Flashlight.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Usage\SpatialAnchor\Scripts\AnchorSpawner.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Usage\Locomotion\Scripts\CharacterCapsule.cs" />
@@ -278,10 +282,8 @@
     <Compile Include="Assets\Oculus\Avatar\Samples\SocialStarter\Assets\Scripts\PlayerController.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Usage\HandsTrainExample\Scripts\TrackSegment.cs" />
     <Compile Include="Assets\ThrowLab\Oculus\OVRUILaserPointer.cs" />
-    <Compile Include="Assets\ThrowLab\Oculus\KaisGrabbable.cs" />
-    <Compile Include="Assets\ThrowLab\Oculus\KaiMotherGrabbable.cs" />
-    <Compile Include="Assets\Bazooka.cs" />
-    <Compile Include="Assets\Missile.cs" />
+    <Compile Include="Assets\LoadBazooka.cs" />
+    <Compile Include="Assets\QuickOutline\Scripts\Outline.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Oculus\SampleFramework\Usage\HandsTrainExample\Shaders\XingLightShader.shader" />
@@ -306,6 +308,7 @@
     <None Include="Assets\Oculus\Avatar\Resources\Materials\Expressive\Avatar_PC_SingleComponentExpressive.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
+    <None Include="Assets\QuickOutline\Resources\Shaders\OutlineMask.shader" />
     <None Include="Assets\Oculus\SampleFramework\Usage\HandsTrainExample\Shaders\OculusSampleTrainPropsShader.shader" />
     <None Include="Assets\Oculus\SampleFramework\Usage\DistanceGrab\Materials\ToyCubeWithOutline.shader" />
     <None Include="Assets\Oculus\SampleFramework\Core\Locomotion\Materials\ColumnGlow.shader" />
@@ -331,6 +334,7 @@
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
     <None Include="Assets\BrokenVector\LowPolyShaders\Shaders\LowPolyUnlitShader.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Properties.cginc" />
+    <None Include="Assets\QuickOutline\Readme.txt" />
     <None Include="Assets\Oculus\Avatar\Resources\Materials\AvatarSurfaceShaderSelfOccluding.shader" />
     <None Include="Assets\BrokenVector\LowPolyShaders\Shaders\LowPolyPBRShader.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Surface.cginc" />
@@ -346,6 +350,7 @@
     <None Include="Assets\Oculus\SampleFramework\Core\Video\Plugins\Android\Audio360\ThirdPartyNotices.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />
     <None Include="Assets\Oculus\SampleFramework\Usage\OVROverlayCanvas\Shaders\UI Prerendered.shader" />
+    <None Include="Assets\QuickOutline\Resources\Shaders\OutlineFill.shader" />
     <None Include="Assets\Oculus\Avatar\Samples\CrossPlatform\Readme.txt" />
     <None Include="Assets\Oculus\Avatar\Resources\Materials\AvatarSurfaceShaderPBS.shader" />
     <None Include="Assets\Oculus\SampleFramework\Core\CustomHands\Materials\Hands_Transparent.shader" />
@@ -1233,6 +1238,10 @@
       <Project>{90A5E451-8A6D-2F56-87FE-FD0DB4FC98C5}</Project>
       <Name>Facebook.Wit.Editor</Name>
     </ProjectReference>
+    <ProjectReference Include="BigRookGames.csproj">
+      <Project>{01C25AB1-278E-3520-52EE-94AA3968B593}</Project>
+      <Name>BigRookGames</Name>
+    </ProjectReference>
     <ProjectReference Include="Oculus.LipSync.Editor.csproj">
       <Project>{E96C47C5-F4E7-59E9-C70A-70D23BC7001A}</Project>
       <Name>Oculus.LipSync.Editor</Name>
@@ -1244,10 +1253,6 @@
     <ProjectReference Include="VoiceSDK.Runtime.csproj">
       <Project>{BA93B426-ED90-8520-176C-96736E0C4A61}</Project>
       <Name>VoiceSDK.Runtime</Name>
-    </ProjectReference>
-    <ProjectReference Include="BigRookGames.csproj">
-      <Project>{01C25AB1-278E-3520-52EE-94AA3968B593}</Project>
-      <Name>BigRookGames</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

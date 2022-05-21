@@ -8,6 +8,8 @@ TagManager:
   - Enemy
   - despawn
   - Weapon
+  - Rocket
+  - DetectRocket
   layers:
   - Default
   - TransparentFX
@@ -17,8 +19,8 @@ TagManager:
   - UI
   - DontCollide1
   - Normal
-  - 
-  - 
+  - RocketLoad
+  - Rocket
   - 
   - 
   - 

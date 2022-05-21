@@ -4,6 +4,10 @@ namespace CloudFine.ThrowLab.Oculus
 {
     public class GunfireController : MonoBehaviour
     {
+        public Vector3 AddPos;
+
+        public bool loaded = false;
+
         // --- Audio ---
         public AudioClip GunShotClip;
         public AudioClip ReloadClip;
@@ -49,8 +53,7 @@ namespace CloudFine.ThrowLab.Oculus
             // --- If rotate is set to true, rotate the weapon in scene ---
             if (rotate)
             {
-                transform.localEulerAngles = new Vector3(transform.localEulerAngles.x, transform.localEulerAngles.y 
-                                                                        + rotationSpeed, transform.localEulerAngles.z);
+                transform.localEulerAngles = new Vector3(transform.localEulerAngles.x, transform.localEulerAngles.y  + rotationSpeed, transform.localEulerAngles.z);
             }
 
             // --- Fires the weapon if the delay time period has passed since the last shot ---
@@ -64,6 +67,10 @@ namespace CloudFine.ThrowLab.Oculus
             {
                 lastScopeState = scopeActive;
                 scope.SetActive(scopeActive);
+            }
+            if(loaded)
+            {
+                Invoke("ReEnableDisabledProjectile", 0);
             }
         }
 
@@ -83,14 +90,15 @@ namespace CloudFine.ThrowLab.Oculus
             // --- Shoot Projectile Object ---
             if (projectilePrefab != null)
             {
-                GameObject newProjectile = Instantiate(projectilePrefab, muzzlePosition.transform.position, muzzlePosition.transform.rotation);
+                GameObject newProjectile = Instantiate(projectilePrefab, muzzlePosition.transform.position + AddPos, muzzlePosition.transform.rotation);
             }
 
             // --- Disable any gameobjects, if needed ---
             if (projectileToDisableOnFire != null)
             {
                 projectileToDisableOnFire.SetActive(false);
-                Invoke("ReEnableDisabledProjectile", 3);
+                loaded = false;
+                //Invoke("ReEnableDisabledProjectile", 3);
             }
 
             // --- Handle Audio ---

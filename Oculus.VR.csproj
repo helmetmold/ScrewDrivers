@@ -80,6 +80,7 @@
     <Compile Include="Assets\Oculus\VR\Scripts\Util\OVRRecord.cs" />
     <Compile Include="Assets\Oculus\VR\Scripts\Util\OVRAudioSourceTest.cs" />
     <Compile Include="Assets\Oculus\VR\Scripts\Util\OVRMesh.cs" />
+    <Compile Include="Assets\Oculus\VR\Scripts\Util\SpecificPosition.cs" />
     <Compile Include="Assets\Oculus\VR\Scripts\Util\OVRHandTest.cs" />
     <Compile Include="Assets\Oculus\VR\Scripts\Util\OVRGrabbable.cs" />
     <Compile Include="Assets\Oculus\VR\Scripts\OVRSceneLoader.cs" />
@@ -139,7 +140,6 @@
     <Compile Include="Assets\Oculus\VR\Scripts\Util\OVRMixedRealityCaptureConfiguration.cs" />
     <Compile Include="Assets\Oculus\VR\Scripts\OVRKtxTexture.cs" />
     <Compile Include="Assets\Oculus\VR\Scripts\Util\OVRPointerEventData.cs" />
-    <Compile Include="Assets\Oculus\VR\Scripts\Util\SpecificPosition.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Oculus\VR\Shaders\OVRTrackedKeyboard\PunchThroughPassthrough.shader" />

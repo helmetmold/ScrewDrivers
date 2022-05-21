@@ -1220,6 +1220,10 @@
       <Project>{90A5E451-8A6D-2F56-87FE-FD0DB4FC98C5}</Project>
       <Name>Facebook.Wit.Editor</Name>
     </ProjectReference>
+    <ProjectReference Include="BigRookGames.csproj">
+      <Project>{01C25AB1-278E-3520-52EE-94AA3968B593}</Project>
+      <Name>BigRookGames</Name>
+    </ProjectReference>
     <ProjectReference Include="Oculus.LipSync.Editor.csproj">
       <Project>{E96C47C5-F4E7-59E9-C70A-70D23BC7001A}</Project>
       <Name>Oculus.LipSync.Editor</Name>

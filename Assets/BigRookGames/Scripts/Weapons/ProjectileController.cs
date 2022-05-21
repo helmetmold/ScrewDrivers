@@ -6,8 +6,10 @@ namespace BigRookGames.Weapons
 {
     public class ProjectileController : MonoBehaviour
     {
+        public Vector3 angle;
+
         // --- Config ---
-        public float speed = 1;
+        public float speed = 10;
         public LayerMask collisionLayerMask;
 
         // --- Explosion VFX ---
@@ -33,8 +35,8 @@ namespace BigRookGames.Weapons
             if (targetHit) return;
 
             // --- moves the game object in the forward direction at the defined speed ---
-            //transform.position += transform.forward * (speed * Time.deltaTime);
-            rb.AddRelativeForce(this.transform.up * speed, ForceMode.Impulse);
+            transform.position += transform.forward * (speed * Time.deltaTime);
+            //rb.AddRelativeForce(this.transform.forward * speed, ForceMode.Impulse);
         }
 
         private void Start()
@@ -45,9 +47,12 @@ namespace BigRookGames.Weapons
         /// <summary>
         /// Explodes on contact.
         /// </summary>
+
         /// <param name="collision"></param>
-        private void OnCollisionEnter(Collision collision)
+        void OnTriggerEnter(Collider collision)
         {
+            
+            print("collided");
             // --- return if not enabled because OnCollision is still called if compoenent is disabled ---
             if (!enabled) return;
 
@@ -65,6 +70,7 @@ namespace BigRookGames.Weapons
 
             // --- Destroy this object after 2 seconds. Using a delay because the particle system needs to finish ---
             Destroy(gameObject, 5f);
+            
         }
 
 

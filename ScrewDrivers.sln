@@ -27,9 +27,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ControllerSample", "Control
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Oculus.LipSync", "Oculus.LipSync.csproj", "{F961D5AF-3B3E-C2AB-848B-21FF3BF0EA18}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "sc.vegetationspawner.runtime", "sc.vegetationspawner.runtime.csproj", "{5CA8ACEF-F9A6-08C6-8EC5-05C7E2D650EA}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BigRookGames", "BigRookGames.csproj", "{01C25AB1-278E-3520-52EE-94AA3968B593}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "sc.vegetationspawner.runtime", "sc.vegetationspawner.runtime.csproj", "{5CA8ACEF-F9A6-08C6-8EC5-05C7E2D650EA}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Oculus.Interaction.Editor", "Oculus.Interaction.Editor.csproj", "{63C25D76-C238-9C60-4C16-D2C508CBA128}"
 EndProject
@@ -117,14 +117,14 @@ Global
 		{F961D5AF-3B3E-C2AB-848B-21FF3BF0EA18}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F961D5AF-3B3E-C2AB-848B-21FF3BF0EA18}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F961D5AF-3B3E-C2AB-848B-21FF3BF0EA18}.Release|Any CPU.Build.0 = Release|Any CPU
-		{5CA8ACEF-F9A6-08C6-8EC5-05C7E2D650EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5CA8ACEF-F9A6-08C6-8EC5-05C7E2D650EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5CA8ACEF-F9A6-08C6-8EC5-05C7E2D650EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5CA8ACEF-F9A6-08C6-8EC5-05C7E2D650EA}.Release|Any CPU.Build.0 = Release|Any CPU
 		{01C25AB1-278E-3520-52EE-94AA3968B593}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{01C25AB1-278E-3520-52EE-94AA3968B593}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{01C25AB1-278E-3520-52EE-94AA3968B593}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{01C25AB1-278E-3520-52EE-94AA3968B593}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5CA8ACEF-F9A6-08C6-8EC5-05C7E2D650EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5CA8ACEF-F9A6-08C6-8EC5-05C7E2D650EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5CA8ACEF-F9A6-08C6-8EC5-05C7E2D650EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5CA8ACEF-F9A6-08C6-8EC5-05C7E2D650EA}.Release|Any CPU.Build.0 = Release|Any CPU
 		{63C25D76-C238-9C60-4C16-D2C508CBA128}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{63C25D76-C238-9C60-4C16-D2C508CBA128}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{63C25D76-C238-9C60-4C16-D2C508CBA128}.Release|Any CPU.ActiveCfg = Release|Any CPU
