@@ -37,6 +37,7 @@ namespace CloudFine.ThrowLab.Oculus
                     Bazooka.GetComponent<Outline>().enabled = false;
                     Bazooka.GetComponent<Bazooka>().MissileLoaded = true;
                     Destroy(Missile);
+                    inside = false;
                     Missile = null;
                 }
             }
@@ -48,7 +49,6 @@ namespace CloudFine.ThrowLab.Oculus
         {
             if (col.tag == "Rocket")
             {
-                inside = false;
                 if (col.GetComponent<ThrowLabOVRGrabbable>().GettingGrabbed == true)
                 {
                     Bazooka.GetComponent<Outline>().enabled = false;

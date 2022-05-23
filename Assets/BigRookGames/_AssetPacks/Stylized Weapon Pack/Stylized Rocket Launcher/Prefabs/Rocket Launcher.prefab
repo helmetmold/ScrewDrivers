@@ -160,6 +160,7 @@ GameObject:
   - component: {fileID: 9005479896781161318}
   - component: {fileID: 4490302565791019162}
   - component: {fileID: 2205214468985690845}
+  - component: {fileID: 2621040685669332921}
   m_Layer: 0
   m_Name: Rocket Launcher
   m_TagString: Untagged
@@ -475,3 +476,23 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &2621040685669332921
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4490302565791019165}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cbf8c34a0beb9d946ae9602f93f98498, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  firedelay: 0
+  bazooka: {fileID: 0}
+  RocketLauncher: {fileID: 0}
+  missile: {fileID: 0}
+  Tube: {fileID: 0}
+  MissileLoaded: 1
+  infront: {x: 0, y: 0, z: 0}
+  rotation: {x: 0, y: 0, z: 0}

@@ -100,7 +100,6 @@ namespace CloudFine.ThrowLab.Oculus
                 loaded = false;
                 //Invoke("ReEnableDisabledProjectile", 3);
             }
-
             // --- Handle Audio ---
             if (source != null)
             {

@@ -9,7 +9,7 @@ namespace CloudFine.ThrowLab.Oculus
 
         public float firedelay;
 
-        public KaisGrabbable bazooka;
+        public GameObject bazooka;
 
         public GunfireController RocketLauncher;
 
@@ -17,23 +17,26 @@ namespace CloudFine.ThrowLab.Oculus
 
         public GameObject Tube;
 
+        public GameObject LoadBazooka;
+
         public bool MissileLoaded = true;
 
         public Vector3 infront;
 
         public Vector3 rotation;
 
+        public GameObject projectileToDisableOnFire;
+
         // Start is called before the first frame update
         void Start()
         {
-            bazooka = this.gameObject.GetComponent<KaisGrabbable>();
             //missile.transform.localScale = missile.transform.localScale / 2;
         }
 
         // Update is called once per frame
         void Update()
         {
-            if (bazooka.GettingGrabbed == true)
+            if (bazooka.GetComponent<KaisGrabbable>().GettingGrabbed == true)
             {
                 if(MissileLoaded)
                 {
@@ -41,6 +44,8 @@ namespace CloudFine.ThrowLab.Oculus
                     {
                         RocketLauncher.FireWeapon();
                         StartCoroutine(FireMissile());
+                        LoadBazooka.GetComponent<LoadBazooka>().inside = false;
+                        projectileToDisableOnFire.SetActive(false);
                     }
                 }
                 
