@@ -216,6 +216,7 @@
     <Compile Include="Assets\ThrowLab\Core\Scripts\UI\UIAngleValue.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Usage\Passthrough\Scripts\SceneSampler.cs" />
     <Compile Include="Assets\Oculus\Avatar\Scripts\OvrAvatarPacket.cs" />
+    <Compile Include="Assets\BazookaGrab.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Core\Locomotion\Scripts\TeleportTargetHandlerNode.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Core\DistanceGrab\Scripts\GrabbableCrosshair.cs" />
     <Compile Include="Assets\Oculus\Avatar\Scripts\OvrAvatarAssetMesh.cs" />
@@ -253,6 +254,7 @@
     <Compile Include="Assets\ThrowLab\UnityXR\UnityXR_DeviceDetector.cs" />
     <Compile Include="Assets\Scripts\Drive.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Usage\Passthrough\Scripts\OverlayPassthrough.cs" />
+    <Compile Include="Assets\Scripts\Breakable.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Core\Locomotion\Scripts\LocomotionTeleport.cs" />
     <Compile Include="Assets\ThrowLab\UnityXR\UnityXR_GrabThresholdModifier.cs" />
     <Compile Include="Assets\Oculus\Voice\Demo\Scripts\InteractionHandler.cs" />
@@ -284,7 +286,7 @@
     <Compile Include="Assets\Oculus\Avatar\Samples\SocialStarter\Assets\Scripts\PlayerController.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Usage\HandsTrainExample\Scripts\TrackSegment.cs" />
     <Compile Include="Assets\ThrowLab\Oculus\OVRUILaserPointer.cs" />
-    <Compile Include="Assets\BazookaGrab.cs" />
+    <Compile Include="Assets\Explosion.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Oculus\SampleFramework\Usage\HandsTrainExample\Shaders\XingLightShader.shader" />

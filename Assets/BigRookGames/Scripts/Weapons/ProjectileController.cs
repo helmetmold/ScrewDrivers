@@ -9,7 +9,7 @@ namespace BigRookGames.Weapons
         public Vector3 angle;
 
         // --- Config ---
-        public float speed = 10;
+        public float speed = 1;
         public LayerMask collisionLayerMask;
 
         // --- Explosion VFX ---
