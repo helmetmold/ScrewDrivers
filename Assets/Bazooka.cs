@@ -15,7 +15,7 @@ namespace CloudFine.ThrowLab.Oculus
 
         public GameObject missile;
 
-        public GameObject Tube;
+        //public GameObject Tube;
 
         public GameObject LoadBazooka;
 

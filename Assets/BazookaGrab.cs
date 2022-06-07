@@ -13,7 +13,7 @@ namespace CloudFine.ThrowLab.Oculus
         public GameObject lefthand;
         public GameObject righthand;
 
-        private SpringJoint springjoint;
+        //private SpringJoint springjoint;
 
         public GameObject connectedBody;
 
@@ -21,7 +21,7 @@ namespace CloudFine.ThrowLab.Oculus
 
         void OnTriggerEnter(Collider col)
         {
-            springjoint = handle.GetComponent<SpringJoint>();
+            //springjoint = handle.GetComponent<SpringJoint>();
             if (col.tag == "LeftHand")
             {
                 inside = true;
@@ -39,7 +39,7 @@ namespace CloudFine.ThrowLab.Oculus
                 }
                 if(handle.GetComponent<KaisGrabbable>().GettingGrabbed)
                 {
-                    springjoint.connectedBody = connectedBody.GetComponent<Rigidbody>();
+                    //springjoint.connectedBody = connectedBody.GetComponent<Rigidbody>();
 
                     grabbed = true;
                 }
@@ -51,7 +51,7 @@ namespace CloudFine.ThrowLab.Oculus
             }
             else
             {
-                springjoint.connectedBody = null;
+                //springjoint.connectedBody = null;
             }
         }
 

@@ -10,6 +10,8 @@ public class DestroyBrick : MonoBehaviour
         
     }
 
+    public string destroy = "Weapon";
+
     // Update is called once per frame
     void Update()
     {
@@ -18,7 +20,7 @@ public class DestroyBrick : MonoBehaviour
 
     void OnTriggerEnter(Collider col)
     {
-        if(col.gameObject.tag == "Weapon")
+        if(col.gameObject.tag == destroy)
         {
             Destroy(col.gameObject);
             print("boom");

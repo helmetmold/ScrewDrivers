@@ -239,7 +239,7 @@ namespace OVRTouchSample
                 for (int i = 0; i < m_colliders.Length; ++i)
                 {
                     Collider collider = m_colliders[i];
-                    collider.enabled = false;
+                    //collider.enabled = false;
                     collider.transform.localScale = new Vector3(COLLIDER_SCALE_MIN, COLLIDER_SCALE_MIN, COLLIDER_SCALE_MIN);
                 }
             }

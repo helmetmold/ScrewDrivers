@@ -22,17 +22,23 @@ namespace CloudFine.ThrowLab.Oculus
         }
         private ThrowHandle m_handle;
 
+        public OVRGrabber handholding;
 
         public override void GrabBegin(OVRGrabber hand, Collider grabPoint)
         {
             base.GrabBegin(hand, grabPoint);
             _handle.OnAttach(hand.gameObject, hand.gameObject);
+
+            
         }
 
         public override void GrabEnd(Vector3 linearVelocity, Vector3 angularVelocity)
         {
             base.GrabEnd(linearVelocity, angularVelocity);
             _handle.OnDetach();
+
         }
+
+        
     }
 }

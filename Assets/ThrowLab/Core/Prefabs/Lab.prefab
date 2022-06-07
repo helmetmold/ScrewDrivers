@@ -7849,6 +7849,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b8ad6d8de50dc4d4091c6ce4fb027fa3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  israndom: 0
+  introduce: 1
+  Brick: {fileID: 0}
+  Mortar: {fileID: 0}
+  Grenade: {fileID: 0}
   _throwablePrefabs:
   - {fileID: 114751973581776844, guid: 3524731f0a6c4934eabc7f1dc2745c8f, type: 3}
   - {fileID: 114887080172001516, guid: 4cfc19a0cb67f984e9e6dd759555055d, type: 3}

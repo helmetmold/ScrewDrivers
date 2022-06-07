@@ -261,11 +261,11 @@ MonoBehaviour:
   _deviceConfigurations: []
   _throwConfigurationSet:
     _deviceConfigurations:
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
+    - {fileID: 11400000, guid: f906fbe101e21e2429c53659971b5f75, type: 2}
+    - {fileID: 11400000, guid: 7f737850736ff97469cc67005c1fe044, type: 2}
+    - {fileID: 11400000, guid: cb1fe7dfdcf67fe45a844bf2d04bd870, type: 2}
+    - {fileID: 11400000, guid: 4c9b590da6ffec74ab5caf661f2f443d, type: 2}
+    - {fileID: 11400000, guid: adfae0e03b1216340ad3bc8e2e14f4fe, type: 2}
 --- !u!114 &2621282950811155466
 MonoBehaviour:
   m_ObjectHideFlags: 0

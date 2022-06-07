@@ -6,6 +6,10 @@ public class WaveSpawner : MonoBehaviour
 {
     public enum SpawnState { Spawning, Waiting, Counting};
 
+    public int WaveCount = 1;
+
+    public ChangeText changetext;
+
     [System.Serializable]
     public class Wave
     {
@@ -13,12 +17,22 @@ public class WaveSpawner : MonoBehaviour
         public Transform enemy;
         public int count;
         public float rate;
+
+        public Wave(string Name, Transform Enemy, int Count, float Rate)
+        {
+            name = Name;
+            enemy = Enemy;
+            count = Count;
+            rate = Rate;
+        }
     }
 
     public Wave[] waves;
     private int nextWave = 0;
 
-    public float timeBetweenWaves = 10f;
+    public Transform bus;
+
+    public float timeBetweenWaves = 20f;
     public float waveCountdown;
 
     private float searchCountdown = 1f;
@@ -68,20 +82,17 @@ public class WaveSpawner : MonoBehaviour
 
     void WaveCompleted()
     {
-        print("wave completed") ;
+        WaveCount++;
+
+        changetext.GetComponent<ChangeText>().changeRound(WaveCount);
+
+
 
         state = SpawnState.Counting;
         waveCountdown = timeBetweenWaves;
+        
 
-        if(nextWave + 1 > waves.Length - 1)
-        {
-            nextWave = 0;
-
-        }
-        else
-        {
-            nextWave++;
-        }
+        nextWave++;
     }
 
     bool EnemyIsAlive()
@@ -90,7 +101,7 @@ public class WaveSpawner : MonoBehaviour
         if(searchCountdown <=0f)
         {
             searchCountdown = 1f;
-            if(GameObject.FindGameObjectWithTag("Enemy") == null)
+            if(GameObject.FindGameObjectWithTag("Vehicle") == null)
             {
                 return false;
             }
@@ -98,16 +109,36 @@ public class WaveSpawner : MonoBehaviour
         return true;
     }
 
+    public int count = 5;
+    public float rate = 10;
+    public int ROCcount = 3;
+
     IEnumerator SpawnWave(Wave _wave)
     {
         print("spawning wave");
         state = SpawnState.Spawning;
 
-        for (int i = 0; i < _wave.count; i++)
+        //make wave
+
+        Wave currentWave = new Wave("wave",bus,count,rate);
+
+       
+
+        for (int i = 0; i < currentWave.count; i++)
         {
-            SpawnEnemy(_wave.enemy);
-            yield return new WaitForSeconds(_wave.rate);
+            SpawnEnemy(currentWave.enemy);
+            yield return new WaitForSeconds(currentWave.rate);
         }
+
+        //increase wave
+
+        count = count + ROCcount;
+
+        if(rate>3.5f)
+        {
+            rate = rate - .25f;
+        }
+        
 
         state = SpawnState.Waiting;
 

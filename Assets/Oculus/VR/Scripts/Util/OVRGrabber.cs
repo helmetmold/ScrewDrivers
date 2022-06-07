@@ -17,8 +17,11 @@ using UnityEngine;
 /// Allows grabbing and throwing of objects with the OVRGrabbable component on them.
 /// </summary>
 [RequireComponent(typeof(Rigidbody))]
+[RequireComponent(typeof(Rigidbody))]
 public class OVRGrabber : MonoBehaviour
 {
+    public GameObject handtohide;
+
     // Grip trigger thresholds for picking up objects, with some hysteresis.
     public float grabBegin = 0.55f;
     public float grabEnd = 0.35f;
@@ -50,7 +53,7 @@ public class OVRGrabber : MonoBehaviour
 
     // Should be OVRInput.Controller.LTouch or OVRInput.Controller.RTouch.
     [SerializeField]
-    protected OVRInput.Controller m_controller;
+    public OVRInput.Controller m_controller;
 
 	// You can set this explicitly in the inspector if you're using m_moveHandPosition.
 	// Otherwise, you should typically leave this null and simply parent the hand to the hand anchor
@@ -229,6 +232,8 @@ public class OVRGrabber : MonoBehaviour
 		OVRGrabbable closestGrabbable = null;
         Collider closestGrabbableCollider = null;
 
+        
+
         // Iterate grab candidates and find the closest grabbable candidate
 		foreach (OVRGrabbable grabbable in m_grabCandidates.Keys)
         {
@@ -335,6 +340,8 @@ public class OVRGrabber : MonoBehaviour
             return;
         }
 
+        handtohide.GetComponent<SkinnedMeshRenderer>().forceRenderingOff = true;
+
         Rigidbody grabbedRigidbody = m_grabbedObj.grabbedRigidbody;
         Vector3 grabbablePosition = pos + rot * m_grabbedObjectPosOff;
         Quaternion grabbableRotation = rot * m_grabbedObjectRotOff;
@@ -355,7 +362,8 @@ public class OVRGrabber : MonoBehaviour
     {
         if (m_grabbedObj != null)
         {
-			OVRPose localPose = new OVRPose { position = OVRInput.GetLocalControllerPosition(m_controller), orientation = OVRInput.GetLocalControllerRotation(m_controller) };
+            handtohide.GetComponent<SkinnedMeshRenderer>().forceRenderingOff = false;
+            OVRPose localPose = new OVRPose { position = OVRInput.GetLocalControllerPosition(m_controller), orientation = OVRInput.GetLocalControllerRotation(m_controller) };
             OVRPose offsetPose = new OVRPose { position = m_anchorOffsetPosition, orientation = m_anchorOffsetRotation };
             localPose = localPose * offsetPose;
 

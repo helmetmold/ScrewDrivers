@@ -7,6 +7,13 @@ namespace CloudFine.ThrowLab
 {
     public class LabManager : MonoBehaviour
     {
+        public bool israndom = false;
+        public int introduce = 1;
+
+        public GameObject Brick;
+        public GameObject Mortar;
+        public GameObject Grenade;
+
         [Header("Spawn")]
         public List<ThrowHandle> _throwablePrefabs;
         public Transform _spawnPoint;
@@ -83,7 +90,6 @@ namespace CloudFine.ThrowLab
                 if (_throwableLabel)
                 {
                     _throwableLabel.text = "(none)";
-
                 }
             }
 
@@ -116,6 +122,7 @@ namespace CloudFine.ThrowLab
 
         public void SpawnTrackedThrowable()
         {
+            
             if (_throwablePrefab)
             {
                 List<ThrowHandle> throwableSet = new List<ThrowHandle>();
@@ -128,7 +135,26 @@ namespace CloudFine.ThrowLab
                 {
                     if (!configEnabled[i]) continue;
 
-                   
+                    if(israndom)
+                    {
+                        
+                        if (introduce > 2)
+                        {
+                            int xcount = Random.Range(0, 3);
+
+                            _throwablePrefab = _throwablePrefabs[xcount];
+
+                        }
+                        else if(introduce > 1)
+                        {
+                            int xcount = Random.Range(0, 2);
+                            _throwablePrefab = _throwablePrefabs[xcount];
+                        }
+                        else
+                        {
+                            _throwablePrefab = _throwablePrefabs[0];
+                        }
+                    }
                     ThrowHandle handle = GameObject.Instantiate(_throwablePrefab);
                     throwableSet.Add(handle);
 

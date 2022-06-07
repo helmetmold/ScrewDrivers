@@ -18,21 +18,26 @@ public class Breakable : MonoBehaviour
         if (_broken) return;
         if (other.tag == "Weapon")
         {
-            other.gameObject.AddComponent<Explosion>();
-            speed = 0;
-            _broken = true;
-            Destroy(gameObject);
-            var replacement = Instantiate(_replacement, transform.position + Additional, transform.rotation);
 
-            var rbs = replacement.GetComponentsInChildren<Rigidbody>();
-            foreach (var rb in rbs)
-            {
-                rb.AddExplosionForce(other.GetComponent<Collision>().relativeVelocity.magnitude * _collisionMultiplier, GetComponent<Collision>().contacts[0].point, 2);
-            }
-
+            switchout(other);
             
         }
             
+    }
+
+    public void switchout(Collider other)
+    {
+        other.gameObject.AddComponent<Explosion>();
+        speed = 0;
+        _broken = true;
+        Destroy(gameObject);
+        var replacement = Instantiate(_replacement, transform.position + Additional, transform.rotation);
+
+        var rbs = replacement.GetComponentsInChildren<Rigidbody>();
+        foreach (var rb in rbs)
+        {
+            rb.AddExplosionForce(other.GetComponent<Collision>().relativeVelocity.magnitude * _collisionMultiplier, GetComponent<Collision>().contacts[0].point, 2);
+        }
     }
 
     void Update()
