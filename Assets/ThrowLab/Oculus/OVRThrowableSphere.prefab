@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 33077079699301718}
   - component: {fileID: 23115229362880582}
   - component: {fileID: 135406712167053272}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Sphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -109,7 +109,7 @@ GameObject:
   - component: {fileID: 54637726657930614}
   - component: {fileID: 114927332789279944}
   - component: {fileID: 114512951316434380}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: OVRThrowableSphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -167,6 +167,7 @@ MonoBehaviour:
   m_grabPoints:
   - {fileID: 135406712167053272}
   GettingGrabbed: 0
+  handholding: {fileID: 0}
 --- !u!114 &114512951316434380
 MonoBehaviour:
   m_ObjectHideFlags: 0

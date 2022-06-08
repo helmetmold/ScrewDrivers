@@ -8,11 +8,12 @@ namespace CloudFine.ThrowLab
     public class LabManager : MonoBehaviour
     {
         public bool israndom = false;
-        public int introduce = 1;
+        public int introduce = 0;
 
-        public GameObject Brick;
-        public GameObject Mortar;
-        public GameObject Grenade;
+        public WeapontoSpawn _weapontospawn = WeapontoSpawn.Brick;
+
+        public enum WeapontoSpawn {Brick,Grenade,Bazooka};
+
 
         [Header("Spawn")]
         public List<ThrowHandle> _throwablePrefabs;
@@ -81,6 +82,8 @@ namespace CloudFine.ThrowLab
 
         private void Start()
         {
+            
+
             if (_throwablePrefabs.Count > 0)
             {
                 SelectThrowable(0);
@@ -102,7 +105,7 @@ namespace CloudFine.ThrowLab
         private void Update()
         {
             if (_currentSpawn) {
-                if (Vector3.Distance(_currentSpawn.transform.position, _spawnPoint.position) > .3f)
+                if (Vector3.Distance(_currentSpawn.transform.position, _spawnPoint.position) > .5f)
                 {
                     SpawnTrackedThrowable();
                 }
@@ -138,14 +141,14 @@ namespace CloudFine.ThrowLab
                     if(israndom)
                     {
                         
-                        if (introduce > 2)
+                        if (introduce == 2)
                         {
                             int xcount = Random.Range(0, 3);
 
                             _throwablePrefab = _throwablePrefabs[xcount];
 
                         }
-                        else if(introduce > 1)
+                        else if(introduce == 1)
                         {
                             int xcount = Random.Range(0, 2);
                             _throwablePrefab = _throwablePrefabs[xcount];
@@ -155,6 +158,27 @@ namespace CloudFine.ThrowLab
                             _throwablePrefab = _throwablePrefabs[0];
                         }
                     }
+                    else
+                    {
+                        switch (_weapontospawn)
+                        {
+                            case WeapontoSpawn.Brick:
+                                _throwablePrefab = _throwablePrefabs[0];
+                                break;
+                            case WeapontoSpawn.Grenade:
+                                _throwablePrefab = _throwablePrefabs[1];
+                                break;
+                            case WeapontoSpawn.Bazooka:
+                                _throwablePrefab = _throwablePrefabs[2];
+                                break;
+                            default:
+                                _throwablePrefab = _throwablePrefabs[0];
+                                break;
+                        }
+                    }
+                    
+
+
                     ThrowHandle handle = GameObject.Instantiate(_throwablePrefab);
                     throwableSet.Add(handle);
 

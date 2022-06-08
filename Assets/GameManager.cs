@@ -4,21 +4,5 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    public int lives = 3;
-    public int wave = 0;
     
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        if(lives < 1)
-        {
-            //Game over
-        }
-    }
 }

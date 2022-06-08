@@ -10,6 +10,8 @@ namespace CloudFine.ThrowLab.Oculus
 
         public GameObject offset;
 
+        public Vector3 nadeoffset;
+
         Vector3 Lhand = new Vector3(.7f, 1f, 3f);
         Vector3 Rhand = new Vector3(3f, 1f, .7f);
 
@@ -19,7 +21,8 @@ namespace CloudFine.ThrowLab.Oculus
         // Start is called before the first frame update
         void Start()
         {
-            
+            gameObject.transform.localPosition = gameObject.transform.localPosition + nadeoffset;
+
         }
 
         // Update is called once per frame

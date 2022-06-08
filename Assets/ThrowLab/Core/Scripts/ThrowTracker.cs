@@ -7,6 +7,8 @@ namespace CloudFine.ThrowLab
 {
     public class ThrowTracker : MonoBehaviour
     {
+        public GameObject hideline;
+
         public LineRenderer _trajectoryLine;
         public ParticleSystem _sampleParticleSystem;
         private ParticleSystemRenderer _particleRenderer;
@@ -363,6 +365,9 @@ namespace CloudFine.ThrowLab
             if (_collisionMarker == null)
             {
                 _collisionMarker = GameObject.Instantiate(_collisionMarkerPrefab, position, Quaternion.LookRotation(normal), this.transform);
+
+                hideline.GetComponent<FadeOutTracker>().hit = true;
+
                 MeshRenderer render = _collisionMarker.GetComponentInChildren<MeshRenderer>();
                 if (render)
                 {

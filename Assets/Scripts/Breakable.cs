@@ -9,7 +9,7 @@ public class Breakable : MonoBehaviour
     [SerializeField] private float _collisionMultiplier = 100;
     [SerializeField] private bool _broken;
 
-    private int speed = 5;
+    public int speed = 5;
 
     public Vector3 Additional;
 

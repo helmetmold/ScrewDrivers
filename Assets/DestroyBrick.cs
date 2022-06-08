@@ -2,28 +2,51 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DestroyBrick : MonoBehaviour
+namespace CloudFine.ThrowLab
 {
-    // Start is called before the first frame update
-    void Start()
+    public class DestroyBrick : MonoBehaviour
     {
-        
-    }
 
-    public string destroy = "Weapon";
+        public Material Skybox;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+        public float flashspeed = 2;
 
-    void OnTriggerEnter(Collider col)
-    {
-        if(col.gameObject.tag == destroy)
+        public float flashtime = 6;
+
+
+        public string destroy = "Weapon";
+
+        public GameObject ControlLives;
+        // Start is called before the first frame update
+        void Start()
         {
-            Destroy(col.gameObject);
-            print("boom");
+
+
         }
+
+
+        // Update is called once per frame
+        void Update()
+        {
+
+        }
+
+        void OnTriggerEnter(Collider col)
+        {
+            if (col.gameObject.tag == destroy)
+            {
+                Destroy(col.gameObject);
+
+                ControlLives.GetComponent<ControlLives>().LivesLost();
+
+            }
+
+
+        }
+
+
     }
 }
+
+
+
