@@ -36,7 +36,7 @@ public class Breakable : MonoBehaviour
         var rbs = replacement.GetComponentsInChildren<Rigidbody>();
         foreach (var rb in rbs)
         {
-            rb.AddExplosionForce(other.GetComponent<Collision>().relativeVelocity.magnitude * _collisionMultiplier, GetComponent<Collision>().contacts[0].point, 2);
+            //rb.AddExplosionForce(other.GetComponent<Collision>().relativeVelocity.magnitude * _collisionMultiplier, GetComponent<Collision>().GetContact(1).point, 2);
         }
     }
 

@@ -20,6 +20,7 @@ namespace CloudFine.ThrowLab.Oculus
             {
                 inside = true;
                 Missile = col.gameObject;
+                print("in");
             }
         }
 

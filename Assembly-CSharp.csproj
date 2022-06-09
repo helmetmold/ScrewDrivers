@@ -81,6 +81,7 @@
     <Compile Include="Assets\Oculus\SampleFramework\Usage\HandsTrainExample\Scripts\CowController.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Usage\Passthrough\Scripts\HandMeshUI.cs" />
     <Compile Include="Assets\Oculus\Avatar\Samples\SocialStarter\Assets\Scripts\RoomManager.cs" />
+    <Compile Include="Assets\FadeOutTracker.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Core\CustomHands\Scripts\HandPose.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Core\HandsInteraction\Scripts\Tools\InteractableTool.cs" />
     <Compile Include="Assets\ThrowLab\Oculus\Oculus_DeviceDetector.cs" />
@@ -90,6 +91,7 @@
     <Compile Include="Assets\Changeoffset.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Core\Locomotion\Scripts\TeleportAimVisualLaser.cs" />
     <Compile Include="Assets\ThrowLab\Core\VRInputModule\UIIgnoreRaycast.cs" />
+    <Compile Include="Assets\ControlLives.cs" />
     <Compile Include="Assets\ThrowLab\Core\Scripts\Utility\EstimationUtility.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Core\Video\Scripts\MoviePlayerSample.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Core\Locomotion\Scripts\TeleportDestination.cs" />
@@ -121,6 +123,7 @@
     <Compile Include="Assets\Oculus\SampleFramework\Core\Locomotion\Scripts\CharacterCameraConstraint.cs" />
     <Compile Include="Assets\TutorialScript.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Usage\SpatialAnchor\Scripts\SpatialAnchorSession.cs" />
+    <Compile Include="Assets\LivesManager.cs" />
     <Compile Include="Assets\ThrowLab\Core\Scripts\GrabThresholdModifier.cs" />
     <Compile Include="Assets\Oculus\Avatar\Samples\LocalAvatar\Scripts\GazeTargetSpawner.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Core\Locomotion\Scripts\TeleportTransitionWarp.cs" />
@@ -181,6 +184,7 @@
     <Compile Include="Assets\Oculus\Voice\Demo\Scripts\UIShapesDemo\ColorChanger.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Core\Locomotion\Scripts\TeleportAimHandlerLaser.cs" />
     <Compile Include="Assets\Easy Grab VR\Scripts\SVControllerManager.cs" />
+    <Compile Include="Assets\DestroyAll.cs" />
     <Compile Include="Assets\ThrowLab\Core\Scripts\Utility\CollisionListener.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Usage\Passthrough\Scripts\PassthroughBrush.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Usage\Passthrough\Scripts\PassthroughController.cs" />
@@ -251,6 +255,7 @@
     <Compile Include="Assets\Oculus\SampleFramework\Usage\HandsTrainExample\Scripts\WindmillBladesController.cs" />
     <Compile Include="Assets\Oculus\Avatar\Scripts\OvrAvatarRemoteDriver.cs" />
     <Compile Include="Assets\Oculus\Avatar\Scripts\OvrAvatarHand.cs" />
+    <Compile Include="Assets\GameOver.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Core\Locomotion\Scripts\TeleportInputHandlerTouch.cs" />
     <Compile Include="Assets\ThrowLab\Core\Scripts\ThrowConfigurationSet.cs" />
     <Compile Include="Assets\Easy Grab VR\Scripts\SVButton.cs" />
@@ -304,11 +309,6 @@
     <Compile Include="Assets\Oculus\Avatar\Samples\SocialStarter\Assets\Scripts\PlayerController.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Usage\HandsTrainExample\Scripts\TrackSegment.cs" />
     <Compile Include="Assets\ThrowLab\Oculus\OVRUILaserPointer.cs" />
-    <Compile Include="Assets\ControlLives.cs" />
-    <Compile Include="Assets\DestroyAll.cs" />
-    <Compile Include="Assets\LivesManager.cs" />
-    <Compile Include="Assets\GameOver.cs" />
-    <Compile Include="Assets\FadeOutTracker.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Oculus\SampleFramework\Usage\HandsTrainExample\Shaders\XingLightShader.shader" />

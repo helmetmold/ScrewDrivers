@@ -19,8 +19,8 @@ public class Explosion : MonoBehaviour
                 var rb = obj.GetComponent<Rigidbody>();
                 if (rb == null) continue;
 
-            _explosionForce = collision.rigidbody.velocity.z;
-            _explosionRadius = collision.rigidbody.velocity.z;
+            _explosionForce = collision.relativeVelocity.magnitude;
+            _explosionRadius = collision.rigidbody.velocity.x;
 
             rb.AddExplosionForce(_explosionForce, transform.position, _explosionRadius, 1);
             }

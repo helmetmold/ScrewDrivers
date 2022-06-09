@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2489783810974469297}
   - component: {fileID: 7375337548765109680}
   - component: {fileID: 136168842684345051}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Rocket_Launcher_Missile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -192,8 +192,8 @@ GameObject:
   - component: {fileID: 323248439922596483}
   - component: {fileID: 988175382482574601}
   - component: {fileID: 91128310120046435}
-  - component: {fileID: 7870026953430193671}
-  m_Layer: 0
+  - component: {fileID: 6057759731013916383}
+  m_Layer: 9
   m_Name: Rocket Projectile
   m_TagString: Weapon
   m_Icon: {fileID: 0}
@@ -209,7 +209,7 @@ Transform:
   m_GameObject: {fileID: 4092872357349286730}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -32.518875, y: 1.222, z: 16.514713}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 5088939673380300228}
@@ -254,8 +254,8 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!135 &7870026953430193671
-SphereCollider:
+--- !u!65 &6057759731013916383
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -265,8 +265,8 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 0.2350769, y: 0.30375838, z: 1.0675316}
+  m_Center: {x: 0.014076233, y: 0.008015513, z: 0.033765793}
 --- !u!1001 &4483190134865152260
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -274,9 +274,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5088939673380300228}
     m_Modifications:
+    - target: {fileID: 1231786695147784, guid: 6637f6efebd5b0d4eb939586be277cd9, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1622348778083768, guid: 6637f6efebd5b0d4eb939586be277cd9, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 1764654978243476, guid: 6637f6efebd5b0d4eb939586be277cd9, type: 3}
       propertyPath: m_Name
       value: RocketFire
+      objectReference: {fileID: 0}
+    - target: {fileID: 1764654978243476, guid: 6637f6efebd5b0d4eb939586be277cd9, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 4232694689350172, guid: 6637f6efebd5b0d4eb939586be277cd9, type: 3}
       propertyPath: m_LocalPosition.y
