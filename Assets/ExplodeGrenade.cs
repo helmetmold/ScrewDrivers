@@ -14,13 +14,20 @@ public class ExplodeGrenade : MonoBehaviour
     public void explode()
     {
 
+        
+
         var surroundingObjects = Physics.OverlapSphere(transform.position, _explosionRadius);
-
-
 
         foreach (var obj in surroundingObjects)
         {
-            
+            if(obj.transform.tag == "Vehicle")
+            {
+                if (obj.GetComponent<Breakable>() != null)
+                {
+                    obj.GetComponent<Breakable>().switchout(this.GetComponent<Collider>());
+                }
+
+            }
             var rb = obj.GetComponent<Rigidbody>();
             if (rb == null) continue;
 
@@ -29,7 +36,7 @@ public class ExplodeGrenade : MonoBehaviour
 
             rb.AddExplosionForce(_explosionForce, transform.position, _explosionRadius, 1);
 
-            if (obj.GetComponent<Breakable>() != null)
+            if(obj.GetComponent<Breakable>() != null)
             {
                 obj.GetComponent<Breakable>().switchout(this.GetComponent<Collider>());
             }

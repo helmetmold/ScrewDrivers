@@ -18,6 +18,10 @@ public class BlowUp : MonoBehaviour
 
     public GameObject explodehere;
 
+    public AudioSource fuse;
+
+    public AudioSource lighter;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -31,7 +35,10 @@ public class BlowUp : MonoBehaviour
     {
         if(PinPulled)
         {
-            if(outlined)
+            fuse.Play();
+            lighter.Play();
+            transform.gameObject.tag = "Grenade";
+            if (outlined)
             {
                 this.GetComponent<Outline>().enabled = true;
                 outlined = false;

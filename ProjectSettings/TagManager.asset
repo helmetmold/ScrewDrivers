@@ -15,6 +15,7 @@ TagManager:
   - RightHand
   - Vehicle
   - InactiveWeapon
+  - Grenade
   layers:
   - Default
   - TransparentFX
@@ -29,7 +30,7 @@ TagManager:
   - NeverCollide
   - HandColiider
   - Grabbablehandler
-  - 
+  - Vehicle
   - 
   - 
   - 

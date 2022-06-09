@@ -13,6 +13,8 @@ namespace CloudFine.ThrowLab
 
         public GameObject light;
 
+        public GameObject Greenlight;
+
         public GameObject[] BusesLeft;
 
         public GameObject GameOverScreen;
@@ -25,6 +27,12 @@ namespace CloudFine.ThrowLab
         void Start()
         {
             lm = gm.GetComponent<LivesManager>();
+        }
+
+        public void NewRound()
+        {
+            StartCoroutine(SpriteFade(Greenlight.GetComponent<Light>(), 3, 1));
+            StartCoroutine(SpriteFade(Greenlight.GetComponent<Light>(), 0, 1));
         }
 
         public void LivesLost()

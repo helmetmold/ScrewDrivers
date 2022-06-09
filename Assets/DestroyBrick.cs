@@ -35,12 +35,12 @@ namespace CloudFine.ThrowLab
         {
             if (col.gameObject.tag == destroy)
             {
-                Destroy(col.gameObject);
+                
+                Destroy(col.transform.parent.gameObject);
 
                 ControlLives.GetComponent<ControlLives>().LivesLost();
 
             }
-
 
         }
 

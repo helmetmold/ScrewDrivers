@@ -16,6 +16,8 @@ namespace CloudFine.ThrowLab
 
         public GameObject LabMan;
 
+        public GameObject Control_Lives;
+
         [System.Serializable]
         public class Wave
         {
@@ -84,7 +86,7 @@ namespace CloudFine.ThrowLab
             {
                 if (state != SpawnState.Spawning)
                 {
-                    StartCoroutine(SpawnWave(waves[nextWave]));
+                    StartCoroutine(SpawnWave());
                 }
             }
             else
@@ -98,8 +100,8 @@ namespace CloudFine.ThrowLab
             WaveCount++;
 
             changetext.GetComponent<ChangeText>().changeRound(WaveCount);
-
-
+            Control_Lives.GetComponent<ControlLives>().NewRound();
+            
             state = SpawnState.Counting;
             waveCountdown = timeBetweenWaves;
 
@@ -127,7 +129,7 @@ namespace CloudFine.ThrowLab
 
 
 
-        IEnumerator SpawnWave(Wave _wave)
+        IEnumerator SpawnWave()
         {
             if (!gameOver)
             {
@@ -178,7 +180,6 @@ namespace CloudFine.ThrowLab
             {
                 Instantiate(_enemy, Lane3.position, Lane3.rotation);
             }
-            print("Spawning enemy at" + _enemy.name);
         }
 
 
